@@ -138,12 +138,20 @@
           </label>
           <span id="flash-count" class="count-pill">Fiszka 1</span>
         </div>
-        <button id="flashcard" class="flashcard-study" type="button" aria-expanded="false" aria-label="Odwróć fiszkę i sprawdź odpowiedź">
-          <span id="flash-category-label" class="flash-category-label">KOD RADIOWY</span>
-          <span id="flash-code" class="flash-code">10-4</span>
-          <span id="flash-hint" class="flash-hint">Co oznacza ten kod? Spróbuj odpowiedzieć, zanim odwrócisz kartę.</span>
-          <span id="flash-answer" class="flash-answer" hidden>Przyjąłem / zrozumiano</span>
-          <span id="flash-flip-label" class="flash-flip-label">Kliknij kartę, aby ją odwrócić ↻</span>
+        <button id="flashcard" class="flashcard-study" type="button" aria-expanded="false" aria-label="Przód fiszki. Odwróć, aby zobaczyć znaczenie.">
+          <span class="flashcard-inner">
+            <span class="flashcard-face flashcard-front">
+              <span id="flash-category-label" class="flash-category-label">KOD RADIOWY</span>
+              <span id="flash-code" class="flash-code">10-4</span>
+              <span class="flash-hint">Co oznacza ten kod? Spróbuj odpowiedzieć, zanim odwrócisz kartę.</span>
+              <span class="flash-flip-label">Kliknij kartę, aby ją odwrócić ↻</span>
+            </span>
+            <span class="flashcard-face flashcard-back">
+              <span class="flash-category-label">ZNACZENIE</span>
+              <span id="flash-answer" class="flash-answer">Przyjąłem / zrozumiano</span>
+              <span class="flash-flip-label">Kliknij, aby wrócić do kodu ↻</span>
+            </span>
+          </span>
         </button>
         <p id="flash-encouragement" class="flash-encouragement" aria-live="polite">Spokojnie — to trening, nie sprawdzian. Każde powtórzenie pomaga!</p>
         <div class="flash-actions">
