@@ -30,8 +30,9 @@
     .confetti{position:fixed;z-index:20;top:-20px;width:9px;height:13px;border-radius:3px;pointer-events:none;animation:confetti-fall var(--fall-time,2s) ease-in forwards}
     .quiz-options{max-width:760px;margin:auto}.setup-field{display:grid;gap:8px;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.setup-field select{min-height:45px;padding:0 12px;border:1px solid var(--line);border-radius:13px;color:var(--text);background:var(--soft);font-size:14px;font-weight:650;letter-spacing:normal;text-transform:none}.mode-pick{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:17px 0 10px}.mode-button{display:grid;grid-template-columns:auto 1fr;column-gap:11px;align-items:center;padding:15px;border:1px solid var(--line);border-radius:16px;background:#171c29;text-align:left;cursor:pointer;transition:transform .18s,border-color .18s,background .18s}.mode-button:hover{transform:translateY(-3px)}.mode-button.is-selected{border-color:rgba(120,225,193,.58);background:linear-gradient(115deg,rgba(120,225,193,.1),rgba(169,154,255,.1))}.mode-button>span{grid-row:span 2;font-size:23px}.mode-button strong{font-size:14px}.mode-button small{color:var(--muted);font-size:11px}.mode-note{min-height:42px;margin:12px 0;color:var(--muted);font-size:13px}.quiz-play{max-width:760px;margin:auto}.quiz-play[hidden],.quiz-result[hidden],.quiz-setup[hidden]{display:none}.quiz-play .panel-top h3{margin:4px 0 0}.quiz-play .panel-top{align-items:center}.answer-button.is-chosen{border-color:rgba(169,154,255,.7);background:rgba(169,154,255,.16);color:var(--text)}.result-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:14px 0 22px}.answer-review{display:grid;gap:8px;max-width:700px;margin:0 auto;text-align:left}.review-item{padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#171c29;font-size:12px}.review-item strong{display:block;margin-bottom:3px;color:var(--text)}.review-item span{color:var(--muted)}.review-item.was-correct{border-color:rgba(120,225,193,.25)}.review-item.was-wrong{border-color:rgba(255,154,171,.25)}.result-badge{display:inline-flex;margin:5px auto 8px;padding:5px 12px;border-radius:999px;color:var(--mint);background:rgba(120,225,193,.12);font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.result-badge.failed{color:var(--gold);background:rgba(255,212,139,.12)}.scroll-reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1)}.scroll-reveal.is-visible{opacity:1;transform:translateY(0)}
     .learning-progress{position:relative;display:grid;grid-template-columns:1fr auto;gap:12px 20px;align-items:center;overflow:hidden;padding:22px 24px;border:1px solid rgba(169,154,255,.2);border-radius:22px;background:linear-gradient(115deg,rgba(169,154,255,.1),rgba(120,225,193,.06)),var(--panel)}.progress-copy h2{margin:4px 0;font-size:21px;letter-spacing:-.03em}.progress-copy p{margin:0;color:var(--muted);font-size:13px}.progress-stats{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;line-height:1.25}.progress-stats strong{color:var(--mint);font-size:31px;letter-spacing:-.05em}.progress-track{grid-column:1/-1;height:8px;overflow:hidden;border-radius:999px;background:var(--soft)}.progress-track span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--purple),var(--mint));transition:width .6s cubic-bezier(.2,.8,.2,1)}.save-note{grid-column:1/-1;margin:0;color:var(--muted);font-size:10px}.progress-sparkle{position:absolute;right:26%;top:-32px;color:rgba(169,154,255,.12);font-size:100px;pointer-events:none}
-    .flash-study{max-width:760px;margin:auto}.flash-toolbar{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:16px}.flash-toolbar .setup-field{flex:1;max-width:330px}.flashcard-study{display:grid;width:100%;min-height:250px;place-content:center;justify-items:center;gap:10px;padding:24px;border:1px solid rgba(120,225,193,.24);border-radius:22px;background:radial-gradient(ellipse at 50% 0%,rgba(120,225,193,.12),transparent 65%),linear-gradient(145deg,rgba(120,225,193,.06),rgba(169,154,255,.1)),#171c29;text-align:center;cursor:pointer;transition:border-color .25s,box-shadow .25s,transform .25s}.flashcard-study:hover{transform:translateY(-3px);border-color:rgba(120,225,193,.48);box-shadow:0 12px 40px rgba(0,0,0,.15)}.flash-category-label{color:var(--purple);font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.flashcard-study .flash-code{font-size:clamp(38px,7vw,56px)}.flashcard-study .flash-hint{max-width:440px;color:var(--muted);font-size:14px}.flashcard-study .flash-answer{max-width:520px;color:var(--mint);font-size:clamp(17px,3vw,23px);font-weight:780}.flashcard-study .flash-answer[hidden]{display:none}.flashcard-study.is-revealed{animation:flip-card .55s cubic-bezier(.2,.8,.2,1)}.flashcard-study.is-revealed .flash-hint{display:none}.flashcard-study.is-revealed .flash-flip-label{color:var(--mint)}.flash-flip-label{margin-top:5px;color:var(--muted);font-size:11px}.flash-encouragement{min-height:26px;margin:12px 0;color:var(--muted);font-size:13px;text-align:center}.flash-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.flash-actions .button{min-width:170px}.lesson.is-done{animation:answer-pop .4s ease}.flash-actions button:disabled{opacity:.52;cursor:not-allowed;transform:none;filter:none}
-    @keyframes flip-card{0%{transform:perspective(800px) rotateY(0)}45%{transform:perspective(800px) rotateY(80deg)}55%{transform:perspective(800px) rotateY(-80deg)}100%{transform:perspective(800px) rotateY(0)}}
+    .flash-study{max-width:760px;margin:auto}.flash-toolbar{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:16px}.flash-toolbar .setup-field{flex:1;max-width:330px}.flashcard-study{display:grid;width:100%;min-height:250px;place-content:center;justify-items:center;gap:10px;padding:24px;border:1px solid rgba(120,225,193,.24);border-radius:22px;background:radial-gradient(ellipse at 50% 0%,rgba(120,225,193,.12),transparent 65%),linear-gradient(145deg,rgba(120,225,193,.06),rgba(169,154,255,.1)),#171c29;text-align:center;cursor:pointer;transition:border-color .25s,box-shadow .25s,transform .25s}.flashcard-study[hidden]{display:none!important}.flashcard-study.is-entering{animation:flash-in .3s ease both}.flashcard-study:hover{transform:translateY(-3px);border-color:rgba(120,225,193,.48);box-shadow:0 12px 40px rgba(0,0,0,.15)}.flashcard-study.flashcard-back{background:radial-gradient(ellipse at 50% 0%,rgba(169,154,255,.17),transparent 70%),linear-gradient(145deg,rgba(169,154,255,.1),rgba(120,225,193,.07)),#171c29;border-color:rgba(169,154,255,.35)}.flash-category-label{color:var(--purple);font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.flashcard-study .flash-code{font-size:clamp(38px,7vw,56px)}.flashcard-study .flash-hint{max-width:440px;color:var(--muted);font-size:14px}.flashcard-study .flash-answer{max-width:520px;color:var(--mint);font-size:clamp(17px,3vw,23px);font-weight:780}.flash-flip-label{margin-top:5px;color:var(--muted);font-size:11px}.flash-encouragement{min-height:26px;margin:12px 0;color:var(--muted);font-size:13px;text-align:center}.flash-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.flash-actions .button{min-width:170px}.lesson.is-done{animation:answer-pop .4s ease}.flash-actions button:disabled{opacity:.52;cursor:not-allowed;transform:none;filter:none}
+    @keyframes flash-in{from{opacity:0;transform:translateY(8px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .flashcard-study .flash-answer{display:block}
     @keyframes rise-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
     @keyframes float-in{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
     @keyframes soft-float{0%,100%{translate:0 0}50%{translate:0 -8px}}
@@ -42,7 +43,7 @@
     @keyframes result-in{from{opacity:0;transform:scale(.94) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
     @keyframes confetti-fall{to{transform:translate3d(var(--drift),105vh,0) rotate(760deg);opacity:.2}}
     @media(max-width:560px){.learning-progress{grid-template-columns:1fr auto;padding:18px}.progress-copy h2{font-size:18px}.flash-toolbar{align-items:stretch;flex-direction:column}.flash-toolbar .setup-field{max-width:none}.flashcard-study{min-height:220px;padding:18px}.flash-actions{flex-direction:column}.flash-actions .button{width:100%}}
-    @media(prefers-reduced-motion:reduce){.hero h1,.hero-copy,.hero-actions,.hero-note,.hero-card,.brand-mark,.lesson,.code-card,.quick-item,.rule-card,.quiz-play.question-enter,.quiz-result,.confetti,.scroll-reveal,.flashcard-study.is-revealed{animation:none!important;opacity:1!important;transform:none!important;transition:none!important}.hero-card{translate:none!important}.quiz-progress span:after{display:none}}
+    @media(prefers-reduced-motion:reduce){.hero h1,.hero-copy,.hero-actions,.hero-note,.hero-card,.brand-mark,.lesson,.code-card,.quick-item,.rule-card,.quiz-play.question-enter,.quiz-result,.confetti,.scroll-reveal,.flashcard-study.is-entering{animation:none!important;opacity:1!important;transform:none!important;transition:none!important}.hero-card{translate:none!important}.quiz-progress span:after{display:none}}
   </style>
 </head>
 <body>
@@ -138,20 +139,16 @@
           </label>
           <span id="flash-count" class="count-pill">Fiszka 1</span>
         </div>
-        <button id="flashcard" class="flashcard-study" type="button" aria-expanded="false" aria-label="Przód fiszki. Odwróć, aby zobaczyć znaczenie.">
-          <span class="flashcard-inner">
-            <span class="flashcard-face flashcard-front">
-              <span id="flash-category-label" class="flash-category-label">KOD RADIOWY</span>
-              <span id="flash-code" class="flash-code">10-4</span>
-              <span class="flash-hint">Co oznacza ten kod? Spróbuj odpowiedzieć, zanim odwrócisz kartę.</span>
-              <span class="flash-flip-label">Kliknij kartę, aby ją odwrócić ↻</span>
-            </span>
-            <span class="flashcard-face flashcard-back">
-              <span class="flash-category-label">ZNACZENIE</span>
-              <span id="flash-answer" class="flash-answer">Przyjąłem / zrozumiano</span>
-              <span class="flash-flip-label">Kliknij, aby wrócić do kodu ↻</span>
-            </span>
-          </span>
+        <button id="flashcard-front" class="flashcard-study" type="button" aria-label="Przód fiszki. Odwróć, aby zobaczyć znaczenie.">
+          <span id="flash-category-label" class="flash-category-label">KOD RADIOWY</span>
+          <span id="flash-code" class="flash-code">10-4</span>
+          <span class="flash-hint">Co oznacza ten kod? Spróbuj odpowiedzieć, zanim odwrócisz kartę.</span>
+          <span class="flash-flip-label">Kliknij, aby zobaczyć odpowiedź ↻</span>
+        </button>
+        <button id="flashcard-back" class="flashcard-study flashcard-back" type="button" aria-label="Tył fiszki. Kliknij, aby wrócić do kodu." hidden>
+          <span class="flash-category-label">ZNACZENIE KODU</span>
+          <span id="flash-answer" class="flash-answer">Przyjąłem / zrozumiano</span>
+          <span class="flash-flip-label">Kliknij, aby wrócić do kodu ↻</span>
         </button>
         <p id="flash-encouragement" class="flash-encouragement" aria-live="polite">Spokojnie — to trening, nie sprawdzian. Każde powtórzenie pomaga!</p>
         <div class="flash-actions">
@@ -276,7 +273,8 @@
       let flashIndex = 0;
       let flashcardStreak = 0;
       let currentFlashcard = null;
-      const flashCardButton = document.querySelector("#flashcard");
+      const flashFront = document.querySelector("#flashcard-front");
+      const flashBack = document.querySelector("#flashcard-back");
       const flashCategory = document.querySelector("#flash-category");
       const knownButton = document.querySelector("#flash-known");
       const repeatButton = document.querySelector("#flash-repeat");
@@ -328,16 +326,17 @@
         if (!currentFlashcard) return;
         const code = currentFlashcard.querySelector("strong").textContent;
         const category = currentFlashcard.dataset.category;
-        document.querySelector("#flash-code").textContent = category === "local" ? `KOD ${code}` :
-          category === "status" ? `STATUS ${code}` : category === "signal" ? `CODE ${code}` : code;
+        document.querySelector("#flash-code").textContent = code;
         document.querySelector("#flash-category-label").textContent = categoryNames[category];
         document.querySelector("#flash-answer").textContent = currentFlashcard.querySelector("p").textContent;
         document.querySelector("#flash-count").textContent = `Fiszka ${flashIndex + 1} z ${flashDeck.length}`;
-        flashCardButton.classList.remove("is-revealed");
-        flashCardButton.setAttribute("aria-expanded", "false");
-        document.querySelector("#flash-hint").hidden = false;
-        document.querySelector("#flash-answer").hidden = true;
-        document.querySelector("#flash-flip-label").textContent = "Kliknij kartę, aby ją odwrócić ↻";
+        flashFront.hidden = false;
+        flashBack.hidden = true;
+        flashFront.classList.remove("is-entering");
+        void flashFront.offsetWidth;
+        flashFront.classList.add("is-entering");
+        flashFront.setAttribute("aria-label", "Przód fiszki. Odwróć, aby zobaczyć znaczenie.");
+        knownButton.disabled = true;
         repeatButton.disabled = true;
         const mastered = savedProgress.knownCards.includes(cardId(currentFlashcard));
         flashEncouragement.textContent = mastered
@@ -349,15 +348,22 @@
 
       const flipFlashcard = () => {
         if (!currentFlashcard) return;
-        const revealed = flashCardButton.classList.toggle("is-revealed");
-        flashCardButton.setAttribute("aria-expanded", String(revealed));
-        document.querySelector("#flash-hint").hidden = revealed;
-        document.querySelector("#flash-answer").hidden = !revealed;
-        document.querySelector("#flash-flip-label").textContent = revealed
-          ? "Odpowiedź odkryta — dobrze Ci poszło! ✨"
-          : "Kliknij kartę, aby ją odwrócić ↻";
-        knownButton.disabled = !revealed || savedProgress.knownCards.includes(cardId(currentFlashcard));
-        repeatButton.disabled = !revealed;
+        flashFront.hidden = true;
+        flashBack.hidden = false;
+        flashBack.classList.remove("is-entering");
+        void flashBack.offsetWidth;
+        flashBack.classList.add("is-entering");
+        flashBack.setAttribute("aria-label", "Tył fiszki. To jest znaczenie kodu. Kliknij, aby wrócić do pytania.");
+        knownButton.disabled = savedProgress.knownCards.includes(cardId(currentFlashcard));
+        repeatButton.disabled = false;
+      };
+      const returnToPrompt = () => {
+        flashBack.hidden = true;
+        flashFront.hidden = false;
+        flashFront.classList.remove("is-entering");
+        void flashFront.offsetWidth;
+        flashFront.classList.add("is-entering");
+        flashFront.setAttribute("aria-label", "Przód fiszki. Odwróć, aby zobaczyć znaczenie.");
       };
 
       const moveToNextFlashcard = () => {
@@ -371,7 +377,8 @@
         renderFlashcard();
       };
 
-      flashCardButton.addEventListener("click", flipFlashcard);
+      flashFront.addEventListener("click", flipFlashcard);
+      flashBack.addEventListener("click", returnToPrompt);
       flashCategory.addEventListener("change", () => {
         flashcardStreak = 0;
         buildFlashDeck();
@@ -464,11 +471,8 @@
             label: reverse ? item.code : item.description,
             correct: item.code === entry.code
           }));
-          const promptCode = entry.category === "local" ? `KOD-XX · ${entry.code}` :
-            entry.category === "status" ? `Status · ${entry.code}` :
-            entry.category === "signal" ? `Sygnalizacja · ${entry.code}` : entry.code;
           const prompt = reverse ? `Który kod oznacza: „${entry.description}”?` :
-            `Co oznacza ${promptCode}?`;
+            `Co oznacza ${entry.code}?`;
           return { prompt, choices, answer: choices.findIndex(choice => choice.correct), correctText: reverse ? entry.code : entry.description };
         });
       };
