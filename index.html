@@ -29,6 +29,9 @@
     .quiz-play.question-enter{animation:question-in .38s cubic-bezier(.2,.8,.2,1) both}.answer-button.correct{animation:answer-pop .42s ease both}.quiz-result:not([hidden]){display:block}.quiz-result{animation:result-in .55s cubic-bezier(.2,.8,.2,1) both}
     .confetti{position:fixed;z-index:20;top:-20px;width:9px;height:13px;border-radius:3px;pointer-events:none;animation:confetti-fall var(--fall-time,2s) ease-in forwards}
     .quiz-options{max-width:760px;margin:auto}.setup-field{display:grid;gap:8px;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.setup-field select{min-height:45px;padding:0 12px;border:1px solid var(--line);border-radius:13px;color:var(--text);background:var(--soft);font-size:14px;font-weight:650;letter-spacing:normal;text-transform:none}.mode-pick{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:17px 0 10px}.mode-button{display:grid;grid-template-columns:auto 1fr;column-gap:11px;align-items:center;padding:15px;border:1px solid var(--line);border-radius:16px;background:#171c29;text-align:left;cursor:pointer;transition:transform .18s,border-color .18s,background .18s}.mode-button:hover{transform:translateY(-3px)}.mode-button.is-selected{border-color:rgba(120,225,193,.58);background:linear-gradient(115deg,rgba(120,225,193,.1),rgba(169,154,255,.1))}.mode-button>span{grid-row:span 2;font-size:23px}.mode-button strong{font-size:14px}.mode-button small{color:var(--muted);font-size:11px}.mode-note{min-height:42px;margin:12px 0;color:var(--muted);font-size:13px}.quiz-play{max-width:760px;margin:auto}.quiz-play[hidden],.quiz-result[hidden],.quiz-setup[hidden]{display:none}.quiz-play .panel-top h3{margin:4px 0 0}.quiz-play .panel-top{align-items:center}.answer-button.is-chosen{border-color:rgba(169,154,255,.7);background:rgba(169,154,255,.16);color:var(--text)}.result-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:14px 0 22px}.answer-review{display:grid;gap:8px;max-width:700px;margin:0 auto;text-align:left}.review-item{padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#171c29;font-size:12px}.review-item strong{display:block;margin-bottom:3px;color:var(--text)}.review-item span{color:var(--muted)}.review-item.was-correct{border-color:rgba(120,225,193,.25)}.review-item.was-wrong{border-color:rgba(255,154,171,.25)}.result-badge{display:inline-flex;margin:5px auto 8px;padding:5px 12px;border-radius:999px;color:var(--mint);background:rgba(120,225,193,.12);font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.result-badge.failed{color:var(--gold);background:rgba(255,212,139,.12)}.scroll-reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1)}.scroll-reveal.is-visible{opacity:1;transform:translateY(0)}
+    .learning-progress{position:relative;display:grid;grid-template-columns:1fr auto;gap:12px 20px;align-items:center;overflow:hidden;padding:22px 24px;border:1px solid rgba(169,154,255,.2);border-radius:22px;background:linear-gradient(115deg,rgba(169,154,255,.1),rgba(120,225,193,.06)),var(--panel)}.progress-copy h2{margin:4px 0;font-size:21px;letter-spacing:-.03em}.progress-copy p{margin:0;color:var(--muted);font-size:13px}.progress-stats{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;line-height:1.25}.progress-stats strong{color:var(--mint);font-size:31px;letter-spacing:-.05em}.progress-track{grid-column:1/-1;height:8px;overflow:hidden;border-radius:999px;background:var(--soft)}.progress-track span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--purple),var(--mint));transition:width .6s cubic-bezier(.2,.8,.2,1)}.save-note{grid-column:1/-1;margin:0;color:var(--muted);font-size:10px}.progress-sparkle{position:absolute;right:26%;top:-32px;color:rgba(169,154,255,.12);font-size:100px;pointer-events:none}
+    .flash-study{max-width:760px;margin:auto}.flash-toolbar{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:16px}.flash-toolbar .setup-field{flex:1;max-width:330px}.flashcard-study{display:grid;width:100%;min-height:250px;place-content:center;justify-items:center;gap:10px;padding:24px;border:1px solid rgba(120,225,193,.24);border-radius:22px;background:radial-gradient(ellipse at 50% 0%,rgba(120,225,193,.12),transparent 65%),linear-gradient(145deg,rgba(120,225,193,.06),rgba(169,154,255,.1)),#171c29;text-align:center;cursor:pointer;transition:border-color .25s,box-shadow .25s,transform .25s}.flashcard-study:hover{transform:translateY(-3px);border-color:rgba(120,225,193,.48);box-shadow:0 12px 40px rgba(0,0,0,.15)}.flash-category-label{color:var(--purple);font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.flashcard-study .flash-code{font-size:clamp(38px,7vw,56px)}.flashcard-study .flash-hint{max-width:440px;color:var(--muted);font-size:14px}.flashcard-study .flash-answer{max-width:520px;color:var(--mint);font-size:clamp(17px,3vw,23px);font-weight:780}.flashcard-study .flash-answer[hidden]{display:none}.flashcard-study.is-revealed{animation:flip-card .55s cubic-bezier(.2,.8,.2,1)}.flashcard-study.is-revealed .flash-hint{display:none}.flashcard-study.is-revealed .flash-flip-label{color:var(--mint)}.flash-flip-label{margin-top:5px;color:var(--muted);font-size:11px}.flash-encouragement{min-height:26px;margin:12px 0;color:var(--muted);font-size:13px;text-align:center}.flash-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.flash-actions .button{min-width:170px}.lesson.is-done{animation:answer-pop .4s ease}.flash-actions button:disabled{opacity:.52;cursor:not-allowed;transform:none;filter:none}
+    @keyframes flip-card{0%{transform:perspective(800px) rotateY(0)}45%{transform:perspective(800px) rotateY(80deg)}55%{transform:perspective(800px) rotateY(-80deg)}100%{transform:perspective(800px) rotateY(0)}}
     @keyframes rise-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
     @keyframes float-in{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
     @keyframes soft-float{0%,100%{translate:0 0}50%{translate:0 -8px}}
@@ -38,13 +41,14 @@
     @keyframes answer-pop{0%{transform:scale(.97)}65%{transform:scale(1.025)}100%{transform:scale(1)}}
     @keyframes result-in{from{opacity:0;transform:scale(.94) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
     @keyframes confetti-fall{to{transform:translate3d(var(--drift),105vh,0) rotate(760deg);opacity:.2}}
-    @media(prefers-reduced-motion:reduce){.hero h1,.hero-copy,.hero-actions,.hero-note,.hero-card,.brand-mark,.lesson,.code-card,.quick-item,.rule-card,.quiz-play.question-enter,.quiz-result,.confetti,.scroll-reveal{animation:none!important;opacity:1!important;transform:none!important;transition:none!important}.hero-card{translate:none!important}.quiz-progress span:after{display:none}}
+    @media(max-width:560px){.learning-progress{grid-template-columns:1fr auto;padding:18px}.progress-copy h2{font-size:18px}.flash-toolbar{align-items:stretch;flex-direction:column}.flash-toolbar .setup-field{max-width:none}.flashcard-study{min-height:220px;padding:18px}.flash-actions{flex-direction:column}.flash-actions .button{width:100%}}
+    @media(prefers-reduced-motion:reduce){.hero h1,.hero-copy,.hero-actions,.hero-note,.hero-card,.brand-mark,.lesson,.code-card,.quick-item,.rule-card,.quiz-play.question-enter,.quiz-result,.confetti,.scroll-reveal,.flashcard-study.is-revealed{animation:none!important;opacity:1!important;transform:none!important;transition:none!important}.hero-card{translate:none!important}.quiz-progress span:after{display:none}}
   </style>
 </head>
 <body>
   <header class="topbar"><div class="shell topbar-inner">
     <a class="brand" href="#start" aria-label="LEA Start, strona główna"><span class="brand-mark" aria-hidden="true">✦</span><span>LEA START<small>przewodnik dla początkujących</small></span></a>
-    <nav aria-label="Nawigacja główna"><a href="#lekcje">Podstawy</a><a href="#kody">Kody</a><a href="#cwiczenia">Quizy</a><a href="#sciaga">Ściąga</a></nav>
+    <nav aria-label="Nawigacja główna"><a href="#lekcje">Podstawy</a><a href="#kody">Kody</a><a href="#fiszki">Fiszki</a><a href="#cwiczenia">Quizy</a><a href="#sciaga">Ściąga</a></nav>
   </div></header>
   <div id="start" class="shell hero"><div class="hero-grid">
     <div><span class="eyebrow">Spokojnie, każdy kiedyś zaczynał</span><h1>Twoje pierwsze<br><span class="gradient-text">kroki w LEA.</span></h1>
@@ -55,11 +59,20 @@
   </div></div>
   <main class="shell">
     <section aria-labelledby="uwaga-title"><div class="rule-card"><div class="rule-icon" aria-hidden="true">!</div><div><h3 id="uwaga-title">Mała, ważna uwaga</h3><p>To przyjazna pomoc w nauce na podstawie przesłanego kompendium — nie zastępuje szkolenia ani bieżących poleceń przełożonych. Kody i zasady mogą się zmienić; w razie wątpliwości sprawdź aktualne wytyczne.</p></div></div></section>
+    <section class="progress-section" aria-labelledby="progress-title">
+      <div class="learning-progress">
+        <div class="progress-sparkle" aria-hidden="true">✦</div>
+        <div class="progress-copy"><span class="section-kicker">Twój własny rytm</span><h2 id="progress-title">Każdy krok się liczy 💜</h2><p id="learning-message" aria-live="polite">Nie musisz umieć wszystkiego naraz. Zacznij od jednej lekcji albo jednej fiszki — dasz radę!</p></div>
+        <div class="progress-stats"><strong id="known-count">0</strong><span>opanowane<br>fiszki</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Opanowane fiszki" aria-valuemin="0" aria-valuemax="48" aria-valuenow="0"><span id="learning-bar"></span></div>
+        <p id="save-note" class="save-note">Twój postęp zapisuje się na tym urządzeniu.</p>
+      </div>
+    </section>
     <section id="lekcje" aria-labelledby="lekcje-title"><div class="section-heading"><div><span class="section-kicker">Po kolei, bez pośpiechu</span><h2 id="lekcje-title">Trzy rzeczy na start</h2></div><p>Nie musisz wiedzieć wszystkiego od razu. Zacznij od podstaw, które pomagają odnaleźć się na służbie.</p></div>
       <div class="grid-3">
-        <article class="lesson"><div class="lesson-number"><span>Lekcja 01</span><span class="done-mark">✓ Ukończono</span><b>01</b></div><h3>Radio ma być zrozumiałe</h3><p>Kompendium zaleca krótkie, płynne komunikaty. Jeśli nie znasz kodu, użyj krótkiego komunikatu zamiast zgadywać.</p><button class="button secondary lesson-done" type="button" aria-pressed="false">Oznacz jako poznane</button></article>
-        <article class="lesson"><div class="lesson-number"><span>Lekcja 02</span><span class="done-mark">✓ Ukończono</span><b>02</b></div><h3>Trzymaj się struktury</h3><p>Pytania i sprawy służbowe kieruj najpierw do bezpośredniego przełożonego. To właśnie oznacza Chain of Command.</p><button class="button secondary lesson-done" type="button" aria-pressed="false">Oznacz jako poznane</button></article>
-        <article class="lesson"><div class="lesson-number"><span>Lekcja 03</span><span class="done-mark">✓ Ukończono</span><b>03</b></div><h3>Współpracuj z partnerem</h3><p>Podczas interwencji nie zostawiaj partnera samego. Gdy sytuacja jest niejasna, komunikuj się i postępuj według poleceń.</p><button class="button secondary lesson-done" type="button" aria-pressed="false">Oznacz jako poznane</button></article>
+        <article class="lesson" data-lesson="1"><div class="lesson-number"><span>Lekcja 01</span><span class="done-mark">✓ Ukończono</span><b>01</b></div><h3>Radio ma być zrozumiałe</h3><p>Kompendium zaleca krótkie, płynne komunikaty. Jeśli nie znasz kodu, użyj krótkiego komunikatu zamiast zgadywać.</p><button class="button secondary lesson-done" type="button" aria-pressed="false">Oznacz jako poznane</button></article>
+        <article class="lesson" data-lesson="2"><div class="lesson-number"><span>Lekcja 02</span><span class="done-mark">✓ Ukończono</span><b>02</b></div><h3>Trzymaj się struktury</h3><p>Pytania i sprawy służbowe kieruj najpierw do bezpośredniego przełożonego. To właśnie oznacza Chain of Command.</p><button class="button secondary lesson-done" type="button" aria-pressed="false">Oznacz jako poznane</button></article>
+        <article class="lesson" data-lesson="3"><div class="lesson-number"><span>Lekcja 03</span><span class="done-mark">✓ Ukończono</span><b>03</b></div><h3>Współpracuj z partnerem</h3><p>Podczas interwencji nie zostawiaj partnera samego. Gdy sytuacja jest niejasna, komunikuj się i postępuj według poleceń.</p><button class="button secondary lesson-done" type="button" aria-pressed="false">Oznacz jako poznane</button></article>
       </div>
     </section>
     <section id="kody" aria-labelledby="kody-title"><div class="section-heading"><div><span class="section-kicker">Twoja radiowa ściąga</span><h2 id="kody-title">Kody, które warto znać</h2></div><p>Wpisz kod albo jego znaczenie, lub filtruj według kategorii. To oddzielne grupy — KOD-XX, 10-kody, statusy i sygnalizacja.</p></div>
@@ -116,7 +129,30 @@
         <article class="code-card" data-category="signal"><div class="code-top"><strong>CODE 3</strong><span class="code-tag">Sygnalizacja</span></div><p>Sygnalizacja świetlna i dźwiękowa włączona</p></article>
       </div><p id="no-codes" class="empty-state">Nie znaleziono pasujących kodów. Spróbuj innego hasła.</p>
     </section>
-    <section id="cwiczenia" aria-labelledby="cwiczenia-title"><div class="section-heading"><div><span class="section-kicker">Tylko quizy. Zero fiszek.</span><h2 id="cwiczenia-title">Wybierz swój quiz</h2></div><p>Ćwicz bez presji albo uruchom egzamin bez podpowiedzi. Wybierz kategorię, odpowiadaj na pytania i sprawdź wynik.</p></div>
+    <section id="fiszki" aria-labelledby="fiszki-title">
+      <div class="section-heading"><div><span class="section-kicker">Ćwicz we własnym tempie</span><h2 id="fiszki-title">Fiszki, które pomagają zapamiętać</h2></div><p>Zobacz kod, spróbuj przypomnieć sobie znaczenie i odwróć kartę. Oznacz, co już pamiętasz — bez oceniania i presji.</p></div>
+      <article class="flash-panel flash-study">
+        <div class="flash-toolbar">
+          <label class="setup-field">Ćwicz kategorię
+            <select id="flash-category"><option value="all">Wszystkie kody</option><option value="radio">Kody 10-XX</option><option value="local">Kody KOD-XX</option><option value="status">Statusy</option><option value="signal">Sygnalizacja CODE</option></select>
+          </label>
+          <span id="flash-count" class="count-pill">Fiszka 1</span>
+        </div>
+        <button id="flashcard" class="flashcard-study" type="button" aria-expanded="false" aria-label="Odwróć fiszkę i sprawdź odpowiedź">
+          <span id="flash-category-label" class="flash-category-label">KOD RADIOWY</span>
+          <span id="flash-code" class="flash-code">10-4</span>
+          <span id="flash-hint" class="flash-hint">Co oznacza ten kod? Spróbuj odpowiedzieć, zanim odwrócisz kartę.</span>
+          <span id="flash-answer" class="flash-answer" hidden>Przyjąłem / zrozumiano</span>
+          <span id="flash-flip-label" class="flash-flip-label">Kliknij kartę, aby ją odwrócić ↻</span>
+        </button>
+        <p id="flash-encouragement" class="flash-encouragement" aria-live="polite">Spokojnie — to trening, nie sprawdzian. Każde powtórzenie pomaga!</p>
+        <div class="flash-actions">
+          <button id="flash-repeat" class="button secondary" type="button">Jeszcze powtórzę</button>
+          <button id="flash-known" class="button" type="button">Umiem to! ✓</button>
+        </div>
+      </article>
+    </section>
+    <section id="cwiczenia" aria-labelledby="cwiczenia-title"><div class="section-heading"><div><span class="section-kicker">Sprawdź, ile już umiesz</span><h2 id="cwiczenia-title">Wybierz swój quiz</h2></div><p>Ćwicz bez presji albo uruchom egzamin bez podpowiedzi. Wybierz kategorię, odpowiadaj na pytania i sprawdź wynik.</p></div>
       <article id="quiz-panel" class="quiz-panel">
         <div id="quiz-setup" class="quiz-setup">
           <div class="panel-top"><h3>Jak chcesz poćwiczyć?</h3><span class="count-pill">Quizy LEA</span></div>
@@ -157,10 +193,47 @@
   <footer><div class="shell"><p>LEA Start · Prosty przewodnik do nauki podstaw</p><p>Opracowano na podstawie przekazanego „Kompendium Wiedzy LEA”. Zawsze sprawdzaj aktualne zasady organizacji.</p></div></footer>
   <script>
     (() => {
+      const progressKey = "lea-start-learning-v1";
+      const saveNote = document.querySelector("#save-note");
+      let savedProgress = { lessons: [], knownCards: [] };
+      let storageAvailable = true;
+      try {
+        const storedProgress = window.localStorage.getItem(progressKey);
+        if (storedProgress) {
+          const parsed = JSON.parse(storedProgress);
+          if (Array.isArray(parsed.lessons) && Array.isArray(parsed.knownCards)) {
+            savedProgress = {
+              lessons: parsed.lessons.filter(id => ["1", "2", "3"].includes(id)),
+              knownCards: parsed.knownCards.filter(id => typeof id === "string")
+            };
+          }
+        }
+      } catch {
+        storageAvailable = false;
+        saveNote.textContent = "Postęp zapisuje się tylko do czasu zamknięcia tej karty przeglądarki.";
+      }
+
+      const persistProgress = () => {
+        if (!storageAvailable) return;
+        try {
+          window.localStorage.setItem(progressKey, JSON.stringify(savedProgress));
+        } catch {
+          storageAvailable = false;
+          saveNote.textContent = "Przeglądarka nie pozwala zapisać postępu — możesz ćwiczyć dalej, ale wynik nie zostanie zachowany.";
+        }
+      };
+
       document.querySelectorAll(".lesson-done").forEach(button => button.addEventListener("click", () => {
-        const done = button.closest(".lesson").classList.toggle("is-done");
+        const lesson = button.closest(".lesson");
+        const done = lesson.classList.toggle("is-done");
+        const lessonId = lesson.dataset.lesson;
         button.textContent = done ? "Poznane ✓" : "Oznacz jako poznane";
         button.setAttribute("aria-pressed", String(done));
+        savedProgress.lessons = done
+          ? [...new Set([...savedProgress.lessons, lessonId])]
+          : savedProgress.lessons.filter(id => id !== lessonId);
+        persistProgress();
+        renderMotivation();
       }));
 
       const chips = [...document.querySelectorAll(".filter-chip")];
@@ -185,6 +258,142 @@
         filterCodes();
       }));
       search.addEventListener("input", filterCodes);
+
+      const knownCount = document.querySelector("#known-count");
+      const learningBar = document.querySelector("#learning-bar");
+      const progressBar = document.querySelector(".progress-track");
+      const learningMessage = document.querySelector("#learning-message");
+      const categoryNames = { radio: "KOD RADIOWY", local: "KOD-XX", status: "STATUS", signal: "SYGNALIZACJA" };
+      let flashDeck = [];
+      let flashIndex = 0;
+      let flashcardStreak = 0;
+      let currentFlashcard = null;
+      const flashCardButton = document.querySelector("#flashcard");
+      const flashCategory = document.querySelector("#flash-category");
+      const knownButton = document.querySelector("#flash-known");
+      const repeatButton = document.querySelector("#flash-repeat");
+      const flashEncouragement = document.querySelector("#flash-encouragement");
+
+      const cardId = card => `${card.dataset.category}:${card.querySelector("strong").textContent}`;
+      const renderMotivation = () => {
+        const known = new Set(savedProgress.knownCards);
+        const mastered = cards.filter(card => known.has(cardId(card))).length;
+        const completedLessons = savedProgress.lessons.length;
+        knownCount.textContent = String(mastered);
+        learningBar.style.width = `${Math.round(mastered / cards.length * 100)}%`;
+        progressBar.setAttribute("aria-valuemax", String(cards.length));
+        progressBar.setAttribute("aria-valuenow", String(mastered));
+        if (mastered === cards.length && completedLessons === 3) {
+          learningMessage.textContent = "Wszystkie podstawy odhaczone — imponująca wytrwałość! Możesz wrócić do powtórek albo sprawdzić się w quizie. 🏆";
+        } else if (mastered >= 10) {
+          learningMessage.textContent = `Masz już ${mastered} kodów w małym palcu i ${completedLessons}/3 poznanych lekcji. Twój wysiłek naprawdę procentuje! ✨`;
+        } else if (mastered > 0 || completedLessons > 0) {
+          const codeWord = mastered === 1 ? "kod" :
+            mastered % 10 >= 2 && mastered % 10 <= 4 && (mastered % 100 < 12 || mastered % 100 > 14) ? "kody" : "kodów";
+          learningMessage.textContent = `Dobry początek! Masz już w pamięci ${mastered} ${codeWord} i ${completedLessons}/3 lekcji. Nie liczy się tempo — liczy się to, że robisz kolejny krok. 💜`;
+        } else {
+          learningMessage.textContent = "Nie musisz umieć wszystkiego naraz. Zacznij od jednej lekcji albo jednej fiszki — dasz radę!";
+        }
+      };
+
+      document.querySelectorAll(".lesson-done").forEach(button => {
+        const lesson = button.closest(".lesson");
+        const done = savedProgress.lessons.includes(lesson.dataset.lesson);
+        lesson.classList.toggle("is-done", done);
+        button.textContent = done ? "Poznane ✓" : "Oznacz jako poznane";
+        button.setAttribute("aria-pressed", String(done));
+      });
+
+      const buildFlashDeck = () => {
+        const category = flashCategory.value;
+        flashDeck = cards.filter(card => category === "all" || card.dataset.category === category);
+        for (let index = flashDeck.length - 1; index > 0; index--) {
+          const target = Math.floor(Math.random() * (index + 1));
+          [flashDeck[index], flashDeck[target]] = [flashDeck[target], flashDeck[index]];
+        }
+        flashIndex = 0;
+        renderFlashcard();
+      };
+
+      const renderFlashcard = () => {
+        currentFlashcard = flashDeck[flashIndex];
+        if (!currentFlashcard) return;
+        const code = currentFlashcard.querySelector("strong").textContent;
+        const category = currentFlashcard.dataset.category;
+        document.querySelector("#flash-code").textContent = category === "local" ? `KOD ${code}` :
+          category === "status" ? `STATUS ${code}` : category === "signal" ? `CODE ${code}` : code;
+        document.querySelector("#flash-category-label").textContent = categoryNames[category];
+        document.querySelector("#flash-answer").textContent = currentFlashcard.querySelector("p").textContent;
+        document.querySelector("#flash-count").textContent = `Fiszka ${flashIndex + 1} z ${flashDeck.length}`;
+        flashCardButton.classList.remove("is-revealed");
+        flashCardButton.setAttribute("aria-expanded", "false");
+        document.querySelector("#flash-hint").hidden = false;
+        document.querySelector("#flash-answer").hidden = true;
+        document.querySelector("#flash-flip-label").textContent = "Kliknij kartę, aby ją odwrócić ↻";
+        repeatButton.disabled = true;
+        const mastered = savedProgress.knownCards.includes(cardId(currentFlashcard));
+        flashEncouragement.textContent = mastered
+          ? "Znasz już tę fiszkę — świetna pamięć! Powtórka pomaga utrwalić wiedzę. ✨"
+          : "Spokojnie — to trening, nie sprawdzian. Każde powtórzenie pomaga!";
+        knownButton.disabled = true;
+        knownButton.textContent = mastered ? "Już opanowana ✓" : "Umiem to! ✓";
+      };
+
+      const flipFlashcard = () => {
+        if (!currentFlashcard) return;
+        const revealed = flashCardButton.classList.toggle("is-revealed");
+        flashCardButton.setAttribute("aria-expanded", String(revealed));
+        document.querySelector("#flash-hint").hidden = revealed;
+        document.querySelector("#flash-answer").hidden = !revealed;
+        document.querySelector("#flash-flip-label").textContent = revealed
+          ? "Odpowiedź odkryta — dobrze Ci poszło! ✨"
+          : "Kliknij kartę, aby ją odwrócić ↻";
+        knownButton.disabled = !revealed || savedProgress.knownCards.includes(cardId(currentFlashcard));
+        repeatButton.disabled = !revealed;
+      };
+
+      const moveToNextFlashcard = () => {
+        flashIndex += 1;
+        if (flashIndex >= flashDeck.length) {
+          flashcardStreak = 0;
+          buildFlashDeck();
+          flashEncouragement.textContent = "Koniec rundy! Świetna robota — już samo powtarzanie wzmacnia pamięć. Zaczynamy nową rundę! 🎉";
+          return;
+        }
+        renderFlashcard();
+      };
+
+      flashCardButton.addEventListener("click", flipFlashcard);
+      flashCategory.addEventListener("change", () => {
+        flashcardStreak = 0;
+        buildFlashDeck();
+        flashEncouragement.textContent = "Nowa kategoria — super, że poznajesz kolejne tematy! 🌱";
+      });
+      knownButton.addEventListener("click", () => {
+        if (!currentFlashcard || knownButton.disabled) return;
+        const id = cardId(currentFlashcard);
+        savedProgress.knownCards = [...new Set([...savedProgress.knownCards, id])];
+        flashcardStreak += 1;
+        persistProgress();
+        renderMotivation();
+        const mastered = savedProgress.knownCards.length;
+        const encouragement = flashcardStreak % 5 === 0
+          ? `Seria ${flashcardStreak} fiszek! Ależ konsekwencja — należą Ci się brawa! 🎉`
+          : mastered === cards.length
+            ? "Wszystkie fiszki opanowane — to naprawdę imponujące! Jesteś mistrzem/mistrzynią powtórek! 🏆"
+            : ["Brawo! Jeden kod więcej zostaje z Tobą! ✨", "Świetna robota — uczysz się we własnym tempie! 💜", "Mały krok, duży postęp. Tak trzymaj! 🌟"][flashcardStreak % 3];
+        moveToNextFlashcard();
+        flashEncouragement.textContent = encouragement;
+      });
+      repeatButton.addEventListener("click", () => {
+        if (!currentFlashcard) return;
+        flashcardStreak = 0;
+        moveToNextFlashcard();
+        flashEncouragement.textContent = "Powtórki pomagają zapamiętać — dobrze, że dajesz sobie na nie czas! 💪";
+      });
+
+      buildFlashDeck();
+      renderMotivation();
 
       const setup = document.querySelector("#quiz-setup");
       const play = document.querySelector("#quiz-play");
